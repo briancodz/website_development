@@ -33,6 +33,8 @@ body{
 }
 img {
     max-width: 100%;
+    margin: 1em;
+    border-radius: 10%;
 }
 .btn{
     cursor: pointer;
@@ -66,7 +68,24 @@ img {
     margin: 0;
     line-height: 1;
     font-size: clamp(3rem, 7vw, 10rem);
+
 }
+
+
+
+.history, .featured, .feedback, .discover {
+    color: var(--clr-accent);
+    margin-top: 1;
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 5rem;
+    text-align: center;
+}
+.info {
+    margin: 1em;
+    text-align: center;
+}
+
 
 .location{
     color: var(--clr-icons);
@@ -102,15 +121,55 @@ header {
 .secondary-images {
     display: flex;
     gap: 0.5em;
-    max-width: 25%;
+    max-width: 40%;
 }
 footer {
     margin-top: 2em;
+    text-align: center;
 }
 
 .social-link:hover,
 .social-link:focus {
     opacity: 0.5;
+}
+.inputs {
+    padding: 70px; 
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 50px;
+}
+.submit{
+    background-color: darkorange;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    border-radius: 50px;
+    align-self: start;
+    justify-self: start;
+
+}
+.txtarea{
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+.box{
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 @media (min-width:800px){
@@ -154,6 +213,20 @@ footer {
         grid-column: 1 / 3;
         grid-row: 1;
     }
+    .history {
+        color: var(--clr-accent);
+        margin: 0;
+        line-height: 1;
+        font-size: 5rem;
+
+    }
+    .feedback {
+        color: var(--clr-accent);
+        margin: 0;
+        line-height: 1;
+        font-size: 5rem;
+    }
+
     .location,
     .description {
         grid-column: 1 / 2;
@@ -175,6 +248,9 @@ footer {
 
     footer {
         grid-column: 2 /3;
+        text-align: center;
     }
+    
+    
 
 }
